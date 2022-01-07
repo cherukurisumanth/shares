@@ -11,8 +11,8 @@ log_name = os.path.basename(__file__)
 log_path = f"{dir}\/target\{log_name}.log"
 print(log_path)
 
-# stdoutOrigin = sys.stdout
-# sys.stdout = open(log_path, "a+")
+stdoutOrigin = sys.stdout
+sys.stdout = open(log_path, "a+")
 
 
 dataList = fileRead("stocks.txt")
