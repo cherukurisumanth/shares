@@ -30,9 +30,11 @@ def fileRead(filename):
 def calculate(nameString, buyPrice, quantity):
     shareName = nameString+".NS"
     livePrice = st.get_live_price(shareName)
-    profit = quantity * (livePrice - buyPrice)
+    invested = quantity * buyPrice
+    rightnow = quantity * livePrice
+    profit = rightnow - invested
     details = {'shareName': shareName, 'livePrice': livePrice,
-               'buyPrice': buyPrice, 'quantity': quantity, 'profit/loss': profit}
+               'buyPrice': buyPrice, 'quantity': quantity, 'invested': invested, 'rightnow': rightnow, 'profit/loss': profit}
     return details
 
 

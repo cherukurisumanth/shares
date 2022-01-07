@@ -7,4 +7,4 @@ while True:
     dataTable = table(convertedData)
 
     print(dataTable)
-    print(f"\n{'='*30+' '}{round(tpl,2)}{' '+'='*30}")
+    print(f"\n{'='*40+' '}{round(tpl,2)}{' '+'='*40}")
