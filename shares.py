@@ -11,7 +11,6 @@ log_name = os.path.basename(__file__)
 folder = os.path.join(dir, "output")
 os.mkdir(folder)
 log_path = f"{dir}\output\{log_name}.log"
-print(log_path)
 
 stdoutOrigin = sys.stdout
 sys.stdout = open(log_path, "a+")
