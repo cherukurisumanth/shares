@@ -8,6 +8,8 @@ import time
 date = datetime.datetime.now()
 dir = os.path.dirname(__file__)
 log_name = os.path.basename(__file__)
+folder = os.path.join(dir, "output")
+os.mkdir(folder)
 log_path = f"{dir}\output\{log_name}.log"
 print(log_path)
 
